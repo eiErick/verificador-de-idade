@@ -13,6 +13,8 @@ function verificar() {
         var idade = ano - Number(fano.value)
         var genero = ''
 
+        var aniversario = document.getElementsByName("radano")
+
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
 
@@ -67,7 +69,16 @@ function verificar() {
             }
         }
 
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        if (aniversario[1].checked) {
+            var idade = idade - 1
+        }
+        
+        if (idade <= 1) {
+            res.innerHTML = `Detectamos ${genero} com ${idade} ano`
+        } else {
+            res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+        }
+
         res.appendChild(img)
     }
 }
