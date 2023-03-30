@@ -12,6 +12,8 @@ body {
 header {
     color: white;
     text-align: center;
+    margin-top: 6vh;
+    font-size: 1.5em;
 }
 
 section {
@@ -22,6 +24,39 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 10vh;
+}
+
+.form{
+    text-align: center;
+}
+
+.text-form {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#txtano{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: .8em;
+    text-align: center;
+}
+
+#button{
+    display: block;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: .8em;
+    border: none;
+    border-radius: 12px;
+    width: 150px;
+    height: 40px;
 }
 
 div#res{

@@ -13,20 +13,20 @@
     </header>
     <section>
         <div>
-            <p>
-                Ano de Nascimento:
+            <p class="form">
+                <span class="text-form">Ano de Nascimento</span>
                 <input type="number" name="txtano" id="txtano" required>
             </p>
-            <p>
-                Fez aniversário este ano:
+            <p class="form">
+                <span class="text-form">Fez aniversário este ano</span>
                 <input type="radio" name="radano" id="s" checked>
                 <label for="s">Sim</label>
 
                 <input type="radio" name="radano" id="n">
                 <label for="n">Não</label>
             </p>
-            <p>
-                Sexo:
+            <p class="form">
+                <span class="text-form">Sexo</span>
                 <input type="radio" name="radsex" id="mas" checked>
                 <label for="mas">Masculino</label>
 
@@ -34,7 +34,7 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Verificar" id="button" onclick="verificar()">
             </p>
         </div>
         <div id="res">
